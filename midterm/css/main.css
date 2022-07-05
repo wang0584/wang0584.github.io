@@ -16,6 +16,7 @@ header {
     background-image: url("../images/lone-starfish-wide.jpg");
     text-align: center;
     height: 250px;
+    width: 100%;
 }
 
 nav ul li {
@@ -45,4 +46,8 @@ nav ul li {
     display: inline-block;
     width: 25px;
 
+}
+footer {
+    text-align: right;
+    font-size: .8rem;
 }
