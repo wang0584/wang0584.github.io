@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>wang0584 midterm</title>
+    <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
     <!--  -->
-    <div>
+    <div class="wrapper">
         <header>
             <h1>Lone Starfish</h1>
-            <img src="images/lone-starfish-wide.jpg" alt="top image">
 
         </header>
 
@@ -23,7 +23,7 @@
                     <li>CONTACT</li>
                 </ul>
             </nav>
-            <article>
+            <article class="float">
                 <h2>Life of a Starfish</h2>
                 <img src="images/lone-starfish.jpg" alt="article image">
                 <p>
@@ -38,31 +38,30 @@
                     <li>erring barbel Mexican golden trout, killifish bonito; northern anchovy.</li>
                     <li>Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra.</li>
                 </ul>
-
             </article>
             <article>
                 <h3>Contact To Learn More</h3>
-                <div>
-                    <form action="index.html" method="GET">
+                <form action="index.html" method="GET">
+                <div class="formgrid">
                         <label for="Your Name">Your Name</label>
                         <input id="yourname" type="text" name="yourname" placeholder="Xuefeng Wang">
-                    </form>
-                    <form action="index.html" method="GET">
+        
                         <label for="Your Email">Your Email</label>
                         <input id="youremail" type="text" name="youremail" placeholder="Wang0584@algonquinlive.com">
-                    </form>
-                    <form action="index.html" method="GET">
+            
                         <label for="Your Messages">Your Messages</label>
                         <input id="yourmessage" type="text" name="yourmessages" placeholder="Leave your message, thank...">
-                    </form>
+
+                    <h4>Would you like to vist the starfish</h4>
+                    <ul>
+                        <li>Yes</li>
+                        <li>No</li>
+                        <li>Maybe</li>
+                    </ul>
+                    <input class="btn" type="submit" value="Send"/>
                 </div>
-
-            
-
+            </form>
             </article>
-
-
-
         </main>
         <footer>
             CopyRight Xuefeng Wang 2022

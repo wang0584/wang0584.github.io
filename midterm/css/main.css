@@ -1,0 +1,48 @@
+body {
+    background-color: aqua;
+}
+h1 {
+    color: white;
+
+}
+
+.wrapper {
+
+    width: 80%;
+    background-color: #aad4cf;
+    margin: auto;
+}
+
+header {
+    background-image: url("/images/lone-starfish-wide.jpg");
+    text-align: center;
+    height: 300px;
+
+}
+nav ul li {
+    display: inline-block;
+    width: 300px;
+
+}
+.float img {
+    width: 20%;
+}
+
+.float p {
+    float: right;
+    width: 75%;
+}
+
+.formgrid {
+    margin: 0;
+    max-width: 40em;
+    display: grid;
+    gap: .5rem;
+
+}
+
+.formgrid ul li {
+    display: inline-block;
+    width: 25px;
+
+}
