@@ -7,23 +7,23 @@ h1 {
 }
 
 .wrapper {
-
     width: 80%;
     background-color: #aad4cf;
     margin: auto;
 }
 
 header {
-    background-image: url("/images/lone-starfish-wide.jpg");
+    background-image: url("../images/lone-starfish-wide.jpg");
     text-align: center;
-    height: 300px;
-
+    height: 250px;
 }
+
 nav ul li {
     display: inline-block;
     width: 300px;
 
 }
+/*use the float function make the text beside the photo*/
 .float img {
     width: 20%;
 }
