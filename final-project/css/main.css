@@ -1,0 +1,148 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color:#222;
+    padding: 0.5rem;
+    text-align: center;
+}
+.wrapper {
+    margin: 0 auto;
+    width: 90%;
+}
+
+.logoimage {
+    width: 100%;
+    height: 200px;
+    background-color: #c78c06;
+    text-align: left;
+}
+.logoimage img {
+    margin-top: 2rem;
+
+}
+nav {
+    display: flex;
+    flex-direction: column;
+
+}
+nav a {
+    margin-top: 1rem;
+    color: #c78c06;
+    text-decoration-line: none;
+}
+nav a:nth-child(1){
+    margin-top: -2rem;
+    color: #222;
+}
+
+#form {
+    margin:1rem 0 1rem 0;
+    width: 100%;
+}
+
+.banner {
+    background-image: url(../images/main-banner.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+    height: 350px;
+}
+.banner div  {
+    background-color: #222;
+    color: white;
+    width: 80%;
+    height: 250px;
+    margin: 0 auto;
+    opacity: 70%;
+    padding-top: 1rem;
+}
+
+#aboutus .wrapper {
+    background-color: #ffe6ac;
+}
+#aboutus .wrapper img {
+    width: 100%;
+    margin: .5rem auto;
+}
+
+#ourservices img {
+    width: 100%;
+}
+
+.services {
+    background-color: #ffe6ac;
+    /* margin-top: 1rem; */
+}
+.services h3,p,button {
+    margin-top: .5rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+.btn {
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+#ourvision img, #ourteam img {
+    width: 100%;
+}
+
+#ourvision {
+    background-image: url(../images/vision.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+    height: 350px;
+    color: white;
+    margin: 0 auto;
+}
+
+#ourvision h3 {
+    padding-top: 3rem;
+}
+.teams {
+    background-color: #ffe6ac;
+}
+.teams h4 {
+    border-bottom: 3px solid #c78c06;
+}
+
+.formgrid {
+    margin: .5rem;
+    max-width: 40em;
+    display: grid;
+    gap: .5rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid black;
+}
+th {
+    height: 50px;
+    background-color: #ffe6ac;
+}
+td {
+    height: 40px;
+    padding-left: 1rem;
+}
+
+footer {
+    background-color: #222;
+    color: #c78c06;
+}
+footer p {
+    padding-bottom: 1rem;
+}
