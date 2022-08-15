@@ -9,7 +9,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-header {
+header .wrapper {
     background-color:#222;
     padding: 0.5rem;
     text-align: center;
@@ -60,9 +60,10 @@ nav a:nth-child(1){
     background-color: #222;
     color: white;
     width: 80%;
+    max-width: 1000px;
     height: 250px;
-    margin: 0 auto;
-    opacity: 70%;
+    margin:0 auto;
+    opacity: 60%;
     padding-top: 1rem;
 }
 
@@ -145,4 +146,135 @@ footer {
 }
 footer p {
     padding-bottom: 1rem;
+}
+
+@media screen and (min-width: 760px) {
+/* header setting */
+    .wrapper {
+        width: 90%;
+        max-width: 1200px;
+    }
+
+    header .wrapper {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    nav {
+        flex-direction: row;
+    }
+
+    .logoimage {
+        width: 0px;
+    }
+
+    nav a {
+        margin-top: 5rem;
+        color: #c78c06;
+        text-decoration-line: none;
+        text-align: left;
+        margin-right: 1rem;
+        width: 80px;
+    }
+    nav a:nth-child(1){
+        width: 85px;
+        height: 30px;
+        margin-left: 8rem;
+        margin-top: 5rem;
+        color: #222;
+        background-color: #c78c06;
+        text-align: center;
+        padding: .25rem;
+    }
+
+    header .wrapper {
+        background-color:#222;
+        padding: 0.5rem;
+        text-align: center;
+        height: 175px;
+    }
+
+    #form {
+        margin-top: 3rem;
+    }
+    .fa-solid fa-magnifying-glass {
+        color: #c78c06;
+    }
+
+/* main setting */
+    .banner {
+        background-image: url(../images/main-banner.jpg);
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: contain;
+        height: 950px;
+    }
+    #aboutus .wrapper {
+        display: flex;
+    }
+    #aboutus .wrapper img {
+        width: 100%;
+        padding-left: 3rem;
+        margin: 1.5rem auto;
+    }
+
+    #ourservices .allservices {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-areas: 
+        "p1 p1 p1 p2 p2 p2"
+        "p3 p3 p4 p4 p5 p5";
+    }
+
+    #ourservices .allservices > div:nth-child(1) { grid-area: p1; }
+    #ourservices .allservices > div:nth-child(2) { grid-area: p2; }
+    #ourservices .allservices > div:nth-child(3) { grid-area: p3; }
+    #ourservices .allservices > div:nth-child(4) { grid-area: p4; }
+    #ourservices .allservices > div:nth-child(5) { grid-area: p5; }
+
+    .services {
+        height: 350px;
+        margin-left: 1rem;
+        justify-content: center;
+        align-content: center;
+    }
+    .allservices img {
+        margin-left: 1rem;
+    }
+    .services button {
+        width: 90%;
+
+    }
+
+
+    #ourvision {
+        height: 750px;
+        max-width: 1200px;
+    }
+    
+    .allteams {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .allteams div {
+        width: 40%;
+    }
+    .allteams div:nth-child(3){
+    order: 1;
+    }
+
+    .messagelocation {
+        display: flex;
+    }
+    .messagelocation .message,
+    .messagelocation .location {
+        width: 45%;
+    }
+    
+    footer p{
+        margin-left: 10rem;
+    }
+
 }
